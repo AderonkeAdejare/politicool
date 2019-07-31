@@ -16,5 +16,12 @@ class ViewController: UIViewController {
     }
 
 
+   @IBAction func register() {
+            //openUrl(urlStr: )
+UIApplication.shared.open(URL(string: "https://vote.gov")! as URL, options: [:], completionHandler: nil)
+    }
+
+        
+    
 }
 
