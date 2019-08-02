@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About Us-->
+        <scene sceneID="zhU-hb-Lev">
+            <objects>
+                <viewController id="QcD-jj-kXE" customClass="AboutUs" customModule="PolitiCute" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2qm-sR-L9U">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q4-qk-Z8a">
+                                <rect key="frame" x="54" y="45" width="127" height="30"/>
+                                <state key="normal" title="Back to Main Page"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="5ZC-BT-4za"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Photo on 8-2-19 at 9.10 AM #2" translatesAutoresizingMaskIntoConstraints="NO" id="ZY4-Hr-tlO">
+                                <rect key="frame" x="200" y="45" width="435" height="720"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1P-hm-p8G">
+                                <rect key="frame" x="76" y="647" width="683" height="187"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">Aderonke Adejare (right) is 17 years old and a rising senior at Clearview Regional High School. This is her second year at Kode with Klossy and she is glad to be back! When she is not coding she is advocating for civil rights, reading, creating short films, or doing musical activities.                                                                                                 Sathvika Ganti (left) is 15 years old and a rising sophmore at Downingtown Stem Academy. This is her first year at Kode with Klossy and first time coding. She joined Kode with Klossy to learn code in a welcoming environment. Some of her hobbies include listening to music and learning taekwondo.</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZY4-Hr-tlO" firstAttribute="leading" secondItem="Qnw-ck-yUC" secondAttribute="leading" constant="200" id="9XO-GL-LKe"/>
+                            <constraint firstItem="b1P-hm-p8G" firstAttribute="leading" secondItem="Qnw-ck-yUC" secondAttribute="leading" constant="76" id="9mZ-de-vjt"/>
+                            <constraint firstItem="Qnw-ck-yUC" firstAttribute="bottom" secondItem="b1P-hm-p8G" secondAttribute="bottom" constant="319" id="azO-10-Eb7"/>
+                            <constraint firstItem="Qnw-ck-yUC" firstAttribute="trailing" secondItem="5q4-qk-Z8a" secondAttribute="trailing" constant="653" id="f8L-aw-M8z"/>
+                            <constraint firstItem="5q4-qk-Z8a" firstAttribute="leading" secondItem="Qnw-ck-yUC" secondAttribute="leading" constant="54" id="jVJ-X2-UPq"/>
+                            <constraint firstItem="5q4-qk-Z8a" firstAttribute="top" secondItem="Qnw-ck-yUC" secondAttribute="top" constant="25" id="pwf-Me-pB3"/>
+                            <constraint firstItem="Qnw-ck-yUC" firstAttribute="trailing" secondItem="ZY4-Hr-tlO" secondAttribute="trailing" constant="199" id="s3J-xa-kcK"/>
+                            <constraint firstItem="Qnw-ck-yUC" firstAttribute="trailing" secondItem="b1P-hm-p8G" secondAttribute="trailing" constant="75" id="ufS-KB-wbi"/>
+                            <constraint firstItem="ZY4-Hr-tlO" firstAttribute="top" secondItem="Qnw-ck-yUC" secondAttribute="top" constant="75" id="yT1-fq-nqM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qnw-ck-yUC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEq-1I-6Lo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-891.36690647482021" y="8.6330935251798557"/>
+        </scene>
+        <!--Quiz Controller-->
+        <scene sceneID="Vnd-Xj-fns">
+            <objects>
+                <viewController id="oPw-8U-Af2" customClass="QuizController" customModule="PolitiCute" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="omk-ag-QCr">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Questions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sc2-2U-7Oo">
+                                <rect key="frame" x="0.0" y="62" width="834" height="261"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="su0-Mm-1c6">
+                                <rect key="frame" x="228" y="331" width="417" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahy-GD-Vc8">
+                                        <rect key="frame" x="48" y="70" width="320" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="submitAnswer0:" destination="oPw-8U-Af2" eventType="touchUpInside" id="deW-Xb-7lF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XI8-Ne-ggE">
+                                        <rect key="frame" x="48" y="161" width="320" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="submitAnswer1:" destination="oPw-8U-Af2" eventType="touchUpInside" id="CCY-Nc-pp7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbi-Of-tl0">
+                                        <rect key="frame" x="68" y="361" width="280" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="submitAnswer3:" destination="oPw-8U-Af2" eventType="touchUpInside" id="ADH-7b-ykp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrx-mB-tuJ">
+                                        <rect key="frame" x="43" y="263" width="330" height="73"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="submitAnswer2:" destination="oPw-8U-Af2" eventType="touchUpInside" id="qss-UL-e7z"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="x / x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01P-5k-I5p">
+                                        <rect key="frame" x="175" y="484" width="67" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sl4-we-P1A">
+                                <rect key="frame" x="62" y="989" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Main Page"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Nsa-1m-Mrm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GOM-y5-i1e"/>
+                    </view>
+                    <connections>
+                        <outlet property="answer0" destination="Ahy-GD-Vc8" id="6f1-1i-lwY"/>
+                        <outlet property="answer1" destination="XI8-Ne-ggE" id="vwm-As-UWo"/>
+                        <outlet property="answer2" destination="zrx-mB-tuJ" id="BpE-Uf-Vti"/>
+                        <outlet property="answer3" destination="Fbi-Of-tl0" id="Tuy-7N-y7V"/>
+                        <outlet property="lblProcess" destination="01P-5k-I5p" id="mfv-93-SKB"/>
+                        <outlet property="lblQuestion" destination="sc2-2U-7Oo" id="ibb-u8-PhQ"/>
+                        <segue destination="qwr-tD-r3i" kind="show" identifier="sgShowResults" id="Y35-gS-KG4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9F-bd-zQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-848" y="759"/>
+        </scene>
+        <!--Quiz Results View Controller-->
+        <scene sceneID="mcW-GM-9vz">
+            <objects>
+                <viewController id="qwr-tD-r3i" customClass="QuizResultsViewController" customModule="PolitiCute" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bMw-HM-Sur">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You got ... out of .... correct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NI8-17-xOt">
+                                <rect key="frame" x="250" y="598" width="334" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You side most with ... " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaK-Ti-dgz">
+                                <rect key="frame" x="149" y="275" width="552" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0T-Fy-OJl">
+                                <rect key="frame" x="72" y="949" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Main Page"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="RDl-Fy-Uhc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xch-AR-t4m">
+                                <rect key="frame" x="563" y="949" width="232" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Learn More About Political Parties"/>
+                                <connections>
+                                    <segue destination="AY8-bw-Y2y" kind="show" id="Qhk-hc-hnd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3rA-J8-w2e"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblResults" destination="NI8-17-xOt" id="g3m-vW-Xhw"/>
+                        <outlet property="lblTitle" destination="BaK-Ti-dgz" id="jyF-36-cCq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XaH-F5-J4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94" y="1171"/>
+        </scene>
+        <!--Learn Political-->
+        <scene sceneID="xif-Zd-6AA">
+            <objects>
+                <viewController id="AY8-bw-Y2y" customClass="learnPolitical" customModule="PolitiCute" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hSt-S1-3zS">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cx0-ke-HAx">
+                                <rect key="frame" x="62" y="1011" width="127" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Main Page"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="dpC-BO-tBI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypx-vo-hzJ">
+                                <rect key="frame" x="363" y="104" width="414" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">The Democratic Party is one of the two major political parties in the United States. The Party’s official logo is a donkey. This party is known for their support for progressive policies and promotes for civil rights of the minorities. They oppose government involvement in citizen’s noneconomic affairs. The Democratic party supports social and economic equality, less-strict immigration laws, workers rights, and environmental protection programs. They also advocate for social welfare programs like Medicaid and food stamps so they put taxes to gain funds for social programs like these.</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Futura-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="donkey" translatesAutoresizingMaskIntoConstraints="NO" id="tgO-w5-LPa">
+                                <rect key="frame" x="62" y="138" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green party" translatesAutoresizingMaskIntoConstraints="NO" id="g4y-Ba-tgq">
+                                <rect key="frame" x="537" y="400" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Libertarian_Party" translatesAutoresizingMaskIntoConstraints="NO" id="NLb-UH-KdN">
+                                <rect key="frame" x="79" y="581" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hN7-n7-V8Z">
+                                <rect key="frame" x="62" y="343" width="414" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">The Green Party is another political party in the United States. This party believes that the Earth’s physical resources are finite. They look for non-violent solutions to conflicts and support social and environmental justice. They also believe that every person should be entitled to basic rights, that every human being deserves a say in the decisions that affect their lives, and should not be subjected to the will of another. The Green Party advocates for democratic participation and accountability by ensuring that decisions are taken at the closest practical level to those affected by them.</mutableString>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.99278491735458374" green="0.99594050645828247" blue="0.99582952260971069" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.11373" green="0.10979999999999999" blue="0.11373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="13" name="Futura-Medium"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.11373" green="0.10979999999999999" blue="0.11373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMM-Sg-VSB">
+                                <rect key="frame" x="49" y="747" width="501" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">The Republican Party is the other one of the two major political parties in the United States. The Party’s official logo is an elephant. In 19th Century this party stood up against the extension of slavery. Some favour an increase in government regulation of the private, noneconomic lives of citizens in some areas, such as abortion. This party supports low taxes, conservative social policies, and a strong national defense. On the other hand, the Republican Party is against gun-control legislation and federal regulation of traditionally state and local matters, such as policing and education. They also oppose an extensive government regulation of the economy and government-funded social programs.</mutableString>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.97255000000000003" green="0.97255000000000003" blue="0.97255000000000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.11373" green="0.10979999999999999" blue="0.11373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="13" name="Futura-Medium"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.11373" green="0.10979999999999999" blue="0.11373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yab-Js-j1c">
+                                <rect key="frame" x="420" y="554" width="414" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">The Libertarian Party is the third largest political party in the United States. This party’s goal is to emphasize a commitment to free-market principles, civil rights, personal freedom, non-interventionism, peace and free trade. They believe that the government’s only responsibility, if any, should be protecting people from force and fraud. The Libertarian Party also believes that the existing justice system is seriously flawed. They seek to substantially reduce the size and intrusiveness of government and cut and eliminate taxes at every opportunity.</mutableString>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.99291127920150757" green="0.99568361043930054" blue="0.99203580617904663" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="13" name="Futura-Medium"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.11373" green="0.10979999999999999" blue="0.11373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redrepub" translatesAutoresizingMaskIntoConstraints="NO" id="p5v-1d-WT0">
+                                <rect key="frame" x="537" y="807" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UWW-ST-y9n"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPV-Pr-4Ap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657.55395683453241" y="906.47482014388493"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PolitiCute" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM8-cJ-3OT">
+                                <rect key="frame" x="168" y="267" width="499" height="47"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Making Politics Cool and Fun! ">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Futura-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sYn-fW-U3N">
+                                <rect key="frame" x="287" y="489" width="260" height="51"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Political Party Quiz">
+                                            <attributes>
+                                                <color key="NSColor" red="0.98643893003463745" green="0.99256616830825806" blue="0.99560505151748657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="30" name="Futura-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="oPw-8U-Af2" kind="show" id="ie3-ux-NeA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zeg-mn-XsX">
+                                <rect key="frame" x="378" y="349" width="90" height="51"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="News">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99278491735458374" green="0.99594050645828247" blue="0.99582952260971069" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="30" name="Futura-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="bXq-bH-ejX" kind="show" id="4Ce-7M-7e4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7I-2j-9A4">
+                                <rect key="frame" x="353.5" y="881" width="127" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="t7I-2j-9A4" secondAttribute="height" multiplier="127:51" id="ht9-GB-TaJ"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="About Us">
+                                            <attributes>
+                                                <color key="NSColor" red="0.97387200593948364" green="0.98716968297958374" blue="0.98373860120773315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="30" name="Futura-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="QcD-jj-kXE" kind="show" id="pUz-k6-RVk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmQ-PC-eSB">
+                                <rect key="frame" x="226.5" y="614" width="381" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <state key="normal" title="Learn About Political Parties">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AY8-bw-Y2y" kind="show" id="wup-H2-Mms"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NRT-C9-qaz">
+                                <rect key="frame" x="309.5" y="738" width="215" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NRT-C9-qaz" secondAttribute="height" multiplier="215:51" id="B9j-zs-wlV"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Register to Vote">
+                                            <attributes>
+                                                <color key="NSColor" red="0.98337548971176147" green="0.9918634295463562" blue="0.99417990446090698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="30" name="Futura-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="register" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Fj-js-d0R"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PolitiCool" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulx-Mc-1Uw">
+                                <rect key="frame" x="270" y="120" width="295" height="122"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zeg-mn-XsX" secondAttribute="trailing" constant="366" id="1nX-rM-PD1"/>
+                            <constraint firstItem="NRT-C9-qaz" firstAttribute="top" secondItem="QmQ-PC-eSB" secondAttribute="bottom" constant="123" id="2sP-Ux-tN2"/>
+                            <constraint firstItem="Zeg-mn-XsX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="378" id="3Bb-29-Sxe"/>
+                            <constraint firstItem="Ulx-Mc-1Uw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="270" id="57W-11-yyA"/>
+                            <constraint firstItem="Zeg-mn-XsX" firstAttribute="top" secondItem="ZM8-cJ-3OT" secondAttribute="bottom" constant="35" id="6d8-kS-rnc"/>
+                            <constraint firstItem="sYn-fW-U3N" firstAttribute="top" secondItem="Zeg-mn-XsX" secondAttribute="bottom" constant="89" id="6pB-p6-rzI"/>
+                            <constraint firstItem="QmQ-PC-eSB" firstAttribute="top" secondItem="sYn-fW-U3N" secondAttribute="bottom" constant="74" id="9TP-rE-3JH"/>
+                            <constraint firstItem="NRT-C9-qaz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G9X-T7-1lH"/>
+                            <constraint firstItem="t7I-2j-9A4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GJK-N3-sne"/>
+                            <constraint firstItem="NRT-C9-qaz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JYx-m5-vVf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZM8-cJ-3OT" secondAttribute="trailing" constant="167" id="OQa-jM-hB9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ulx-Mc-1Uw" secondAttribute="trailing" constant="269" id="Pjv-M4-GPc"/>
+                            <constraint firstItem="Ulx-Mc-1Uw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="V8s-cR-b90"/>
+                            <constraint firstItem="t7I-2j-9A4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VDp-RN-D5T"/>
+                            <constraint firstItem="sYn-fW-U3N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="287" id="aqx-Zo-eYL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t7I-2j-9A4" secondAttribute="bottom" constant="130" id="bnp-Dr-xuG"/>
+                            <constraint firstItem="sYn-fW-U3N" firstAttribute="top" secondItem="Zeg-mn-XsX" secondAttribute="bottom" constant="89" id="i1J-CB-kAu"/>
+                            <constraint firstItem="QmQ-PC-eSB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j6s-5z-xvh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sYn-fW-U3N" secondAttribute="trailing" constant="287" id="ow0-SU-fGn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QmQ-PC-eSB" secondAttribute="trailing" constant="226.5" id="pLO-b3-pPj"/>
+                            <constraint firstItem="ZM8-cJ-3OT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168" id="qks-nM-2se"/>
+                            <constraint firstItem="QmQ-PC-eSB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="226.5" id="rTV-Xp-Jls"/>
+                            <constraint firstItem="t7I-2j-9A4" firstAttribute="top" secondItem="NRT-C9-qaz" secondAttribute="bottom" constant="92" id="sMV-Ie-Qd6"/>
+                            <constraint firstItem="ZM8-cJ-3OT" firstAttribute="top" secondItem="Ulx-Mc-1Uw" secondAttribute="bottom" constant="25" id="scv-A0-hoD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6330935251798575" y="93.884892086330936"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="d5b-2I-cMy">
+            <objects>
+                <viewController id="bXq-bH-ejX" customClass="NewsViewController" customModule="PolitiCute" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pcz-vM-YmF" customClass="New">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7L-dU-OZA">
+                                <rect key="frame" x="143" y="141" width="548" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="News from reputable, non-biased news sources. ">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="Futura-Medium"/>
+                                            <font key="NSOriginalFont" size="24" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ei8-jt-5p2">
+                                <rect key="frame" x="332" y="310" width="170" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="NPR" image="NPR"/>
+                                <connections>
+                                    <segue destination="CXC-lI-ACn" kind="show" id="RZK-Pn-umB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vz-Zg-tFJ">
+                                <rect key="frame" x="332" y="537" width="170" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="WSJ" image="wall-street-journal-logo"/>
+                                <connections>
+                                    <segue destination="YcH-9b-B0s" kind="show" id="M3c-gg-OCC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mam-ya-kbH">
+                                <rect key="frame" x="332" y="771" width="178" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AP" image="ap"/>
+                                <connections>
+                                    <segue destination="fwF-U4-TiH" kind="show" id="WNH-yw-FSy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5D-C7-MsQ">
+                                <rect key="frame" x="55" y="65" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Main Page"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="aFR-nb-cMW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dWv-RJ-vgj"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KuX-is-Aqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776.2589928057555" y="75.539568345323744"/>
+        </scene>
+        <!--TheAP-->
+        <scene sceneID="Hey-Ka-XhK">
+            <objects>
+                <viewController id="fwF-U4-TiH" customClass="theAP" customModule="PolitiCute" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ycK-Yl-Kly">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qF5-0H-c0d">
+                                <rect key="frame" x="0.0" y="97" width="834" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="AP" id="LzF-Ej-VJH">
+                                        <barButtonItem key="leftBarButtonItem" title="Back to PolitiCool" id="B2g-Pr-dNw">
+                                            <connections>
+                                                <segue destination="bXq-bH-ejX" kind="show" id="Vsc-Lg-QU0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="34p-Hx-dF1">
+                                <rect key="frame" x="0.0" y="141" width="834" height="883"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ke3-tE-hse"/>
+                    </view>
+                    <connections>
+                        <outlet property="ap" destination="34p-Hx-dF1" id="Yx1-7B-lQI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A5d-hq-RdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1610.7913669064749" y="930.75539568345323"/>
+        </scene>
+        <!--WSJ-->
+        <scene sceneID="7qe-AI-GrE">
+            <objects>
+                <viewController id="YcH-9b-B0s" customClass="WSJ" customModule="PolitiCute" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iw1-c3-sfQ">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="37U-Ry-uw9">
+                                <rect key="frame" x="0.0" y="71" width="834" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="WSJ" id="DNm-sv-ixb">
+                                        <barButtonItem key="leftBarButtonItem" title="Back to PolitCool" id="7sK-dr-iCC">
+                                            <connections>
+                                                <segue destination="bXq-bH-ejX" kind="show" id="l4w-Ha-2od"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Lz-9n-5Lr">
+                                <rect key="frame" x="0.0" y="115" width="834" height="947"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0l7-lW-1y2"/>
+                    </view>
+                    <connections>
+                        <outlet property="npr" destination="1Lz-9n-5Lr" id="qiJ-9K-Rge"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MSA-Ja-Z80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744.6043165467627" y="172.66187050359713"/>
+        </scene>
+        <!--Webviewtrial-->
+        <scene sceneID="BIv-30-0aR">
+            <objects>
+                <viewController id="CXC-lI-ACn" customClass="webviewtrial" customModule="PolitiCute" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3wO-f1-fXV">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wZM-9t-ocJ">
+                                <rect key="frame" x="0.0" y="113" width="834" height="949"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OKK-4n-vOU">
+                                <rect key="frame" x="0.0" y="47" width="834" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="NPR " id="fPE-M6-DJ8">
+                                        <barButtonItem key="leftBarButtonItem" title="Back to PolitiCool" id="1UD-jt-LYe">
+                                            <connections>
+                                                <segue destination="bXq-bH-ejX" kind="show" id="hyb-bf-8V8"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VRJ-mj-h7J"/>
+                    </view>
+                    <connections>
+                        <outlet property="npr" destination="wZM-9t-ocJ" id="BNg-wG-TdD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9O-Po-gsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2046.7625899280577" y="-587.05035971223026"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Libertarian_Party" width="985" height="1024"/>
+        <image name="NPR" width="1000" height="1000"/>
+        <image name="Photo on 8-2-19 at 9.10 AM #2" width="1080" height="720"/>
+        <image name="ap" width="1200" height="800"/>
+        <image name="donkey" width="300" height="293"/>
+        <image name="green party" width="619" height="266"/>
+        <image name="redrepub" width="1200" height="1200"/>
+        <image name="wall-street-journal-logo" width="350" height="350"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4Ce-7M-7e4"/>
+        <segue reference="aFR-nb-cMW"/>
+        <segue reference="wup-H2-Mms"/>
+    </inferredMetricsTieBreakers>
+</document>
